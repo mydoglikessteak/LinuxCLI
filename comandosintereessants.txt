@@ -7,8 +7,14 @@ remember to start docker container before
 
 for see all docker containers just do an docker ps(it will just show running containers) 
 						    docker ps -a (for show ALL containerd)
-
 docker stop 
+
+processos ocorrendo{
+	top{
+		Lista todos os processos ocorrendo em forma em que os processos
+		que consomem mais memoria e ram ficam em cima e os que puxam menos
+		ficam embaixo   
+	}
 ps{
 	O comando ps lista os processos em execução no sistema. Porém,
 	 diferentemente do top, ele não traz informações
@@ -19,11 +25,13 @@ ps{
 	 em conjunto com o grep.
 
 	processo = input("qual processo voce quer ver?");//postgres,mysql,docker...
-	
+
 	 ps aux | grep -i processo
 
 pstree{
 	mostra todos os processos ocorrendo em forma de arvore
+}
+
 }
 
 }
